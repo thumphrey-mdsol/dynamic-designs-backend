@@ -1,0 +1,2 @@
+module RoomFurnaturesHelper
+end

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  sale_price: 
+  production_description: MyText
+  image_url: MyString
+  class_name: MyString
+  class_id: 
+  pdp: MyString
+  length: 
+  width: 
+
+two:
+  product_name: MyString
+  sale_price: 
+  production_description: MyText
+  image_url: MyString
+  class_name: MyString
+  class_id: 
+  pdp: MyString
+  length: 
+  width: 

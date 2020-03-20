@@ -30,15 +30,17 @@ ActiveRecord::Schema.define(version: 2020_03_19_183054) do
   end
 
   create_table "room_furnitures", force: :cascade do |t|
-    t.integer "room_id"
+    t.integer "saved_room_id"
     t.integer "furniture_id"
-    t.string "starting_coordinates"
+    t.string "x_coordinate"
+    t.string "y_coordinate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "rooms", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

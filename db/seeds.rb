@@ -16,10 +16,22 @@ SavedRoom.destroy_all
 puts "destroying User"
 User.destroy_all
 
-puts "Creating Furnature"
-f1 = Furniture.create(product_name: "brown leather pullout couch", sale_price: 120, production_description: "You can sit on it!", image_url: "url!",class_name: "couch",class_id: 1,pdp: "wtf",length: 15,width: 3)
-f2 = Furniture.create(product_name:"Big Fluffy Bed", sale_price:500, production_description:"You can sleep on it!", image_url:"url!", class_name:"bed", class_id:3, pdp: "wtf",length: 7,width: 5)
-f3 = Furniture.create(product_name:"Nighty Night Stand", sale_price:50, production_description:"You can sit things on it!", image_url:"url!", class_name:"table", class_id:3, pdp: "wtf",length: 2,width: 2)
+puts "Creating Furniture"
+sofa1 = Furniture.create(product_name: "Beige Corner Sofa", sale_price: 3200, production_description: "You can sit on it!", image_url: "https://www.finlinefurniture.ie/wp-content/gallery/atlas-chaise-top-1/Atlas-Corner-Chaise-Sofa-Top-View-in-Orca-Plain-ow258-Silver-Collection-Fabric.JPG",class_name: "sofa",class_id: 1,pdp: "wtf",length: 11,width: 5)
+
+sofa2 = Furniture.create(product_name: "Brown Leather Sofa", sale_price: 1900, production_description: "You can sit on it!", image_url: "https://hivemodern.com/public_resources/full/gentry-90-2-seater-sofa-patricia-urquiola-moroso-3.jpg",class_name: "sofa",class_id: 1,pdp: "wtf",length: 9,width: 3)
+
+bed1 = Furniture.create(product_name:"White Bed", sale_price: 850, production_description:"You can sleep on it!", image_url:"https://i.pinimg.com/originals/3b/1a/e9/3b1ae9e6d49174442713e3c0e75b8a9f.png", class_name:"bed", class_id:3, pdp: "wtf",length: 7,width: 5)
+
+bed2 = Furniture.create(product_name:"Wooden Framed Bed", sale_price: 1100, production_description:"You can sleep on it!", image_url:"https://i.dlpng.com/static/png/5490929-bed-top-view-brine-bed-top-view-474_474_preview.png", class_name:"bed", class_id:3, pdp: "wtf",length: 7,width: 5)
+
+dresser1 = Furniture.create(product_name:"Antique Wood Dresser", sale_price: 975, production_description:"You can store your clothes in it!", image_url:"https://imageresizer.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2Fhooker_furniture%2Fcolor%2Fsolana%205291_5291-90002-b2.jpg?width=1024&height=768&scale=both&trim.threshold=50&trim.percentpadding=10", class_name:"dresser", class_id:3, pdp: "wtf",length: 6,width: 2)
+
+dresser2 = Furniture.create(product_name:"Wooden Dresser", sale_price: 850, production_description:"You can store your clothes in it!", image_url:"https://static.appliancesconnection.com/product/450x420/c1a591086927d38a8f0eab60047f56ad_980469.jpg", class_name:"dresser", class_id:3, pdp: "wtf",length: 6,width: 2)
+
+sideTable1 = Furniture.create(product_name:"Square Side Table", sale_price: 150, production_description:"You can put things on top of it!", image_url:"https://images2.imgix.net/p4dbimg/1670/images/1193-05top.jpg?trim=color&trimcolor=FFFFFF&trimtol=5&w=1024&h=768&fm=pjpg", class_name:"side table", class_id:3, pdp: "wtf",length: 2,width: 2)
+
+sideTable2 = Furniture.create(product_name:"Round Side Table", sale_price: 150, production_description:"You can put things on top of it!", image_url:"https://images2.imgix.net/p4dbimg/1670/images/1193-05top.jpg?trim=color&trimcolor=FFFFFF&trimtol=5&w=1024&h=768&fm=pjpg", class_name:"side table", class_id:3, pdp: "wtf",length: 2,width: 2)
 
 puts "Creating User"
 u1 = User.create(username: "bob", password: "123", email:"bob@tom.com")
